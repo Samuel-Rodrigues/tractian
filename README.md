@@ -1,113 +1,108 @@
-## 📋 Sobre
+## 📋 About
 
-Aplicação web para monitoramento de componentes industriais, permitindo visualização hierárquica de locais, ativos e componentes, com informações sobre status e sensores.
+Web application for monitoring industrial components, allowing hierarchical visualization of locations, assets, and components, with information on status and sensors.
 
 ![Demonstração](demonstration.mp4)
 
-## 🛠 Tecnologias Principais
+## 🛠 Main Technologies
 
 ### Core
 
-- **React** - Framework JavaScript para construção de interfaces
-- **TypeScript** - Superset JavaScript com tipagem estática
-- **Vite** - Build tool e dev server
+- **React** - JavaScript framework for building user interfaces
+- **TypeScript** - JavaScript superset with static typing
+- **Vite** -  Build tool and development server
 
-### Gerenciamento de Estado
+### State Management
 
-- **MobX** - Biblioteca de gerenciamento de estado
-- **MobX React** - Integrações React para MobX
+- **MobX** - State management library
+- **MobX React** - React integrations for MobX
 
-### Estilização
+### Styling
 
 - **Styled Components** - CSS-in-JS
-- **Theme Provider** - Gerenciamento de temas
 
 ### Testes
 
-- **Vitest** - Framework de testes unitários
-- **React Testing Library** - Testes de componentes React
-- **Playwright** - Testes E2E
+- **Vitest** - Unit testing framework
+- **React Testing Library** -  React component testing
+- **Playwright** - E2E testing
 
-## 🏗 Estrutura do Projeto
+## 🏗 Project Structure
 
 ```
 src/
-├── @types/          # Definições de tipos TypeScript
-├── components/      # Componentes React reutilizáveis
+├── @types/          # TypeScript type definitions  
+├── components/      # Reusable React components  
 │   ├── Header/
 │   ├── Sidebar/
 │   └── MainContent/
-├── pages/          # Componentes de página
+├── pages/          # Page components  
 │   └── Dashboard/
-├── stores/         # Stores MobX
+├── stores/         # MobX stores  
 │   └── CompanyStore/
-├── styles/         # Estilos globais e tema
-├── utils/          # Utilitários e helpers
-└── tests/         # Configurações de teste
+├── styles/         # Global styles and theme  
+├── utils/          # Utilities and helpers  
+└── tests/         # Test configurations 
 ```
 
-## 🧪 Testes
+## 🧪 Tests
 
-### Testes Unitários
+### Unit Tests
 
-- Localizados em `__tests__` dentro de cada componente
-- Testam funcionalidades isoladas
-- Utilizam Vitest e React Testing Library
-- Foco em:
-  - Renderização de componentes
-  - Interações do usuário
-  - Lógica de negócio
-  - Estados e props
+- Located in `__tests__` within each component
+- Test isolated functionalities
+- Use Vitest and React Testing Library
+- Focus on:
+  - Component rendering
+  - User interactions
+  - Business logic
 
-### Testes de Integração
+### Integration Tests
 
-- Testam interação entre componentes
-- Verificam fluxos de dados
-- Validam comportamento do MobX store
+- Test interactions between components
+- Verify data flows
+- Validate MobX store behavior
 
-### Testes E2E
+### E2E Tests
 
-- Localizados em `test/`
-- Utilizam Playwright
-- Simulam comportamento real do usuário
-- Testam fluxos completos como:
-  - Navegação pela árvore de componentes
-  - Visualização de detalhes
-  - Estados de loading
-  - Pesquisa e filtros
+- Located in `test/`
+- Use Playwright
+- Simulate real user behavior
+- Test complete flows such as:
+  - Navigating through the component tree
+  - Viewing details
+  - Loading states
+  - Search and filters
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
 ```bash
-# Instalar dependências
-npm install
+# Install dependencies  
+npm install  
 
-# Executar em desenvolvimento
-npm run dev
+# Run in development  
+npm run dev  
 
-# Build para produção
-npm run build
+# Build for production  
+npm run build  
 
-# Executar testes unitários
-npm run test
+# Run unit tests  
+npm run test  
 
-# Executar testes E2E
-npm run test:e2e
+# Run E2E tests  
+npm run test:e2e  
 ```
 
-## 🧪 Cobertura de Testes
+## 🧪 Test Coverage
 
-- Testes Unitários: Componentes individuais
-- Testes de Integração: Interações entre componentes
-- Testes E2E: Fluxos completos de usuário
+- Unit Tests: Individual components
+- Integration Tests: Interactions between components
+- E2E Tests: Complete user flows
 
-### Principais Casos Testados
+### Main Test Cases
 
-- Renderização de componentes
-- Navegação pela árvore do sidebar
-- Seleção de componentes
-- Exibição de detalhes
-- Estados de loading
-- Tratamento de erros
-- Responsividade
-- Temas
+- Component rendering
+- Navigation through the sidebar tree
+- Component selection
+- Detail display
+- Themes
