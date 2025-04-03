@@ -2,6 +2,8 @@
 
 Aplicação web para monitoramento de componentes industriais, permitindo visualização hierárquica de locais, ativos e componentes, com informações sobre status e sensores.
 
+![Demonstração](caminho/do/gif.gif)
+
 ## 🛠 Tecnologias Principais
 
 ### Core

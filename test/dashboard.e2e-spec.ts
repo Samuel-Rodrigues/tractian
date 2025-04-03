@@ -25,15 +25,12 @@ test("should navigate through sidebar tree and display component details", async
 }) => {
   await page.goto("/", { waitUntil: "networkidle" });
 
-  // Click on "Machinery house" in the tree
   const machineryHouse = await page.getByText("Machinery house");
   await machineryHouse.click();
 
-  // Wait for and click on "Motors H12D"
   const motorsH12D = await page.getByText("Motors H12D");
   await motorsH12D.click();
 
-  // Wait for and click on "Motor H12D- Stage 1"
   const motorStage1 = await page.getByText("Motor H12D- Stage 1");
   await motorStage1.click();
 

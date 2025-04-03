@@ -11,7 +11,7 @@ export default defineConfig({
     exclude: ["node_modules", "dist", ".idea", ".git", ".cache", "test"],
     setupFiles: "./test/setup.ts",
     coverage: {
-      enabled: true,
+      enabled: false,
       provider: "v8",
       reporter: ["text", "json", "html", "lcov"],
       exclude: [
